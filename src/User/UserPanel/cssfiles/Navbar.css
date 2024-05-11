@@ -1,0 +1,149 @@
+/***************************
+           NAV
+****************************/
+nav{
+    width:100%;
+    background-color:var(--white);
+    overflow:hidden !important;
+    flex-wrap:wrap;
+    flex-direction:column;
+}
+
+nav section{   
+    padding:0.3rem 4rem;
+    white-space:nowrap;
+}
+
+nav .head{
+    width:100%;
+    background-color:var(--secondary);
+    color:var(--white);
+    align-items:center;
+    justify-content:space-between;
+}
+
+nav .head ul, nav .head li{
+    align-items:center;
+}
+
+nav .head p{
+    line-height:0;
+    margin:0;
+    font-weight:500;
+    position:relative;
+    display:flex;
+    align-items:center;
+}
+
+nav .head p:before{
+    content:"";
+    width:2px;
+    top:50%;
+    left:-1rem;
+    transform:translate(-50%, -50%);
+    height:100%;
+    background-color:var(--green);
+    position:absolute;
+}
+
+nav .head p iconify-icon{
+    color:var(--green);
+    margin-left:0.5rem;
+}
+
+nav .head ul, nav .head li:not(:last-child){
+    margin-right:1rem;
+}
+
+.logo{
+    max-width:100px;
+    padding:0.8rem;
+}
+
+nav .body{
+    align-items:center;
+    justify-content:space-between;
+    text-transform:uppercase;
+    height: fit-content;
+}
+
+
+nav .links{
+    align-items:center;
+}
+
+nav .links li{
+    padding:0 2rem;
+}
+
+nav .links li a{
+    padding:0.6rem 0;
+    position:relative;
+    color:var(--secondary);
+}
+
+nav .links li .active:after, nav .links li a:after{
+    transition:0.5s;
+    content:"";
+    position:absolute;
+    left:0;
+    width:0;
+    top:100%;
+    height:2px;
+    background:var(--primary);
+}
+
+nav .links li .active:after, nav .links li a:hover:after{
+    width:100%;
+}
+
+.ham{
+    padding:0.3rem;
+    border:2px solid var(--secondary);
+    border-radius:5px;
+}
+
+.swiper_nav{
+    width:100%;
+    position:fixed;
+    top:-150px;
+    background-color:var(--white);
+    box-shadow:0px 6px 16px -6px rgba(1,1,1,0.5);
+    transition:0.5s;
+    z-index:99;
+    -webkit-animation: swipe_down 0.5s 1;
+    animation: swipe_down 0.5s 1;
+    animation-fill-mode: both;
+}
+
+.swiper_up{
+    -webkit-animation: swipe_down 1s 1;
+    animation: swipe_down 1s 1;
+    animation-fill-mode: both;
+}
+
+@media (max-width:820px){
+    nav section{
+        padding:0.2rem 1rem;
+    }
+    
+    nav .head{
+        justify-content:center;
+        padding:0.4rem 0;
+    }
+    
+    nav .links, nav .head .social_icons{
+        display:none !important;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .links {
+      display: none;
+    }
+  
+    .links.show {
+      display: block;
+    }
+  }
+  

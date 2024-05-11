@@ -1,0 +1,58 @@
+/***************************
+         IMPORT
+****************************/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+:root{
+    --default_font:"Open Sans", sans-serif;
+    --title_font:"Montserrat", sans-serif;
+}
+
+:root{
+    --white:#fff;
+    --black:#000;
+    --dark:#2f2c2f;
+    --gray:#71757b;
+    --lite:#bdc1c6;
+    --blue:#3399ff;
+    --red:#ff0808;
+    --green:#45ff08;
+    --yellow:#ffff26;
+}
+
+/***************************
+         DEFAULT
+****************************/
+*, html{
+    scroll-behavior: smooth;
+}
+
+*, *:after, *:before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+
+
+/***************************
+    CUSTOM SCROLL BAR
+****************************/
+::-webkit-scrollbar {
+    height: 12px;
+    width: 2px;
+    background: var(--dark);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--lite);
+    -webkit-box-shadow: 0px 1px 2px var(--dark);
+}
+
+::-webkit-scrollbar-corner {
+    background: var(--dark);
+}
+
+
+
+

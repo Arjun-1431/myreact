@@ -1,0 +1,66 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,500,700,300,100);
+@import url(https://fonts.googleapis.com/css?family=Roboto-Slab:400,500,700,300,100);
+
+h1{
+  text-align: center;
+  color: #454545; 
+  font-family: Roboto, helvetica, arial, sans-serif; 
+}
+
+#sub{
+  text-align: center;
+}
+
+#explanation-table{
+    /* padding-right: -40px; */
+    padding-left: 23px;
+    margin-top: 7%;
+    /* margin-left: 0%; */
+    width: 100%;
+}
+
+
+
+
+.table-title h3 {
+   color: black;
+   font-style:normal;
+   font-family: "Roboto", helvetica, arial, sans-serif;
+   text-transform:uppercase;
+}
+
+/*** Table Styles **/
+
+.table-fill {
+  background: white;
+  border-collapse: collapse;
+  padding:5px;
+  width: 100%;
+}
+ 
+tr:nth-child(odd) td {
+  background:#EFEFEF;
+}
+ 
+td {
+  border-right: 1px solid lightgray;
+  background:#FFFFFF;
+  padding:20px;
+  text-align:left;
+  vertical-align:middle;
+}
+
+table {
+  border-collapse: collapse;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  table-layout: fixed;
+}
+
+th {
+  border-right: 1px solid lightgray;
+  padding:16px;
+  text-align:center;
+  vertical-align:middle;
+}

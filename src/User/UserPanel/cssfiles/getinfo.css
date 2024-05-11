@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Open+Sans&display=swap');
+
+/* *,
+*::before,
+*::after {
+  box-sizing: border-box;
+} */
+
+
+.first {
+  font-size: 2rem;
+  font-family: 'Merriweather', serif;
+  text-transform: uppercase;
+}
+
+.first, p {
+  margin: 1em auto;
+  text-align: center;
+}
+
+.photo{
+    color: grey;
+    /* margin-top: 37%; */
+
+}
+
+.bookform{
+  width: 100%;
+	
+	margin: 0 auto;
+  padding-bottom: 2em;
+  margin-left: 23%;
+}
+
+fieldset {
+  border: none;
+  padding: 1.2rem 0;
+}
+label {
+  font-size: 1rem;
+  font-weight: bold;
+  display: block;
+	margin: 0.5rem 0;
+}
+
+.inline {
+  width: unset;
+  margin: 0 0.5em 0 0;
+  vertical-align: middle;
+}
+
+input,
+.textt
+ {
+
+	width: 80%;
+  min-height: 2em;
+}
+
+
+        option,select {           
+		width: 70%;
+        margin: 0 auto
+		}
+
+input, .textt {
+  border: none;
+  border-radius: 5px;
+  color: rgba(10, 10, 35, 0.7);
+}
+
+.submit-button {
+  display: block;
+  /* width: 60%; */
+  margin: 1em auto;
+  height: 2em;
+  font-size: 1.1rem;
+  background-color: #3b3b4f;
+  border-color: white;
+  /* min-width: 300px; */
+  color: inherit;
+  margin-right: 29%;
+}
+
+
+@media only screen and (max-width: 425px) {
+    .bookform {
+        width: 50%;
+    }
+  }
+
+
+  @media only screen and (min-width: 433px) {
+    .submit-button {
+        min-width: 181px;
+
+    }
+    
+  }

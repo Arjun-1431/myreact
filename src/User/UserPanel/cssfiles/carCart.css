@@ -1,0 +1,164 @@
+/*** Mixins ***/
+/*** Variables ***/
+@import url(http://fonts.googleapis.com/css?family=Poppins|Roboto+Slab|Open+Sans:400italic,700italic,400,700);
+
+main {
+  min-height: 200vh;
+}
+
+
+.cardimage{
+    width: 100%;
+    height: auto;
+    margin: 20px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  color: #444;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+}
+
+.btn.btn-whatsapp {
+  background: #075e54;
+  color: #ffffff;
+}
+.btn.btn-whatsapp:hover, .btn.btn-whatsapp:focus {
+  background: #25d366;
+  color: #111111;
+}
+
+.border-top {
+  border-top: 1px solid lightgray !important;
+}
+
+.border-bottom {
+  border-bottom: 1px solid lightgray !important;
+}
+
+.card {
+  color: #444;
+  background: #e0e0e0;
+  border: #e0e0e0;
+  border-radius: 1rem;
+  box-shadow: -4px -4px 8px rgba(255, 255, 255, 0.7), 4px 4px 8px rgba(173, 173, 173, 0.3), inset 16px 16px 32px rgba(173, 173, 173, 0.2), inset -16px -16px 32px rgba(255, 255, 255, 0.5);
+  width: 105%;
+}
+.card.armada {
+  padding: 0;
+  margin: 0;
+  border-color: lightgray;
+  display: flex;
+  flex-flow: row wrap;
+}
+
+@media (min-width: 992px){
+.row-cols-lg-3{
+    flex: 0 0 auto;
+    width: 100%;
+}
+}
+.card.armada .card-header {
+  background: #fafafa;
+  border: none;
+}
+.card.armada .card-title {
+  font-size: 1.5rem;
+}
+.card.armada .card-body {
+  font-size: 0.85rem;
+  background: transparent;
+}
+.card-body1{
+  margin: 0rem 1rem 1rem 1rem;
+}
+.card.armada .card-footer {
+  border: none;
+}
+.card.armada .card-block {
+  padding: 15px;
+}
+.card.armada .card-block .card-title {
+  font-size: 18px;
+  font-size: 1.125rem;
+  line-height: 24px;
+  line-height: 1.5rem;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.card.armada .summary {
+  font-size: 14px;
+  font-size: 0.875rem;
+  line-height: 18px;
+  line-height: 1.125rem;
+}
+.card.armada .summary .price {
+  width: 100%;
+}
+.card.armada .summary .price .currency {
+  font-size: 16px;
+  font-size: 1rem;
+  line-height: 18px;
+  line-height: 1.125rem;
+  font-weight: 500;
+}
+.card.armada .summary .price .nominal {
+  font-size: 36px;
+  font-size: 2.25rem;
+  line-height: 40px;
+  line-height: 2.5rem;
+  font-weight: 700;
+}
+.card.armada .summary .periode {
+  font-size: 12px;
+  font-size: 0.75rem;
+  line-height: 18px;
+  line-height: 1.125rem;
+  width: 100%;
+  text-align: right;
+}
+.card.armada .details .driver,
+.card.armada .details .gasoline,
+.card.armada .details .capacity {
+  padding: 5px;
+  text-align: center;
+}
+.card.armada .details .driver i,
+.card.armada .details .gasoline i,
+.card.armada .details .capacity i {
+  display: block;
+  text-align: center;
+}
+.card.armada .details .driver span,
+.card.armada .details .gasoline span,
+.card.armada .details .capacity span {
+  font-size: inherit;
+}
+.card.armada .action {
+  display: block;
+}
+.card.armada:hover, .card.armada:focus {
+  cursor: pointer;
+  border-color: lightgray;
+}
+
+.btn-group {
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: -3px -3px 6px #fafafa, 3px 3px 6px #949494 !important;
+}
+
+.btn {
+  border: none;
+  box-shadow: inset 1px 1px 5px rgba(255, 255, 255, 0.3), inset -1px -1px 5px rgba(0, 0, 0, 0.5);
+}
+.btn:hover {
+  box-shadow: inset 0 0 5px #ffff01, inset 0 0 5px rgba(0, 0, 0, 0.5);
+}
+.btn:focus {
+  box-shadow: inset 3px 3px 5px rgba(0, 0, 0, 0.5), inset -3px -3px 5px rgba(255, 255, 255, 0.3);
+}

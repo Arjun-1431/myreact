@@ -1,0 +1,120 @@
+
+.header {
+    height: 60px;
+   
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1em;
+}
+
+.header .logo {
+    text-transform: uppercase;
+}
+  .nav ul li {
+    display: inline-block;
+    padding: 5px;
+    
+    &:last-child { 
+      padding-right: 0;
+    }
+    
+    a {
+      display: block;
+      cursor: pointer;
+    }
+  }
+  
+  .hero {
+    height: 420px;
+   
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+  
+.hero-button {
+    border: none;
+    font-family: inherit;
+    font-size: inherit;
+    color: white;
+    
+    cursor: pointer;
+    padding: 25px 80px;
+    display: inline-block;
+    margin: 15px 30px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 700;
+    outline: none;
+    position: relative;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+  
+  .hero-button:after {
+      content: '';
+      position: absolute;
+      z-index: -1;
+      -webkit-transition: all 0.3s;
+      -moz-transition: all 0.3s;
+      transition: all 0.3s;
+  }
+  .heading3{
+    margin-left: 48%;
+  }
+  
+  
+  
+  .hero-button:active {
+    box-shadow: 0 0 #ab3c3c;
+    -webkit-transform: translate3d(0, 2px, 0);
+      -moz-transform: translate3d(0, 2px, 0);
+  }
+  
+  .partners {
+    padding: 37px;
+  }
+  
+  @-webkit-keyframes slideleft {
+    0% {
+      background-position: 385000px;
+    }
+    100% {
+      background-position: 0;
+    }
+  }
+  
+  @keyframes slideleft {
+    0% {
+      background-position: 385000px;
+    }
+    100% {
+      background-position: 0;
+    }
+  }
+  
+  .partners-img-container {
+    height: 100px;
+    width: 100%;
+    overflow: auto;
+  }
+  
+  .partners-img-container::-webkit-scrollbar { width: 0 !important } /* hide scrollbar in Chrome */
+  .partners-img-container { scrollbar-width: none; } /* hide scrollbar in mozilla */
+  .partners-img-container { -ms-overflow-style: none; } /* hide scrollbar in IE */
+  
+  .partners-img-container .partners-img {
+    height: 100%;
+    width: 100%;
+    background: transparent url(https://squeeze-pics.s3-us-west-2.amazonaws.com/v2/assets/Web+Assets/heroes/Auto-insurance/insurancelogos.jpg) repeat-x 50% 0;
+    -webkit-animation: slideleft 5000s linear infinite;
+    animation: slideleft 5000s linear infinite;
+    cursor: grab;
+  }
+  
